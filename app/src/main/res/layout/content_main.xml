@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextViewPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+
+    <ListView
+        android:id="@+id/song_list"
+        android:entries="@array/filenames"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        >
+    </ListView>
+
+    <Button
+        android:text="Stop"
+        android:textSize="30sp"
+        android:onClick="onClickStop"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
